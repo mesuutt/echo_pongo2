@@ -1,4 +1,4 @@
-module github.com/mesuutt/echo_pongo2
+module github.com/mesuutt/echopongo2
 
 go 1.14
 
