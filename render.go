@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"reflect"
 	"strings"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	"github.com/flosch/pongo2"
 )
 
