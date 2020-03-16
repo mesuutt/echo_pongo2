@@ -1,6 +1,6 @@
-# echo-pongo2
-Use pongo2 templates in the [echo](https://github.com/labstack/echo) web framework
+## echo pongo2 renderer
 
+Use pongo2 templates in the [echo](https://github.com/labstack/echo) web framework
 
 ### Installation
 
