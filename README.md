@@ -1,25 +1,28 @@
 # echo-pongo2
 Use pongo2 templates in the [echo](https://github.com/labstack/echo) web framework
 
-## Usage
-echo-pongo2 implements the echo [Renderer](http://godoc.org/github.com/labstack/echo#Renderer) interface
 
+### Installation
 
 ```
+go get github.com/mesuutt/echopongo2
+```
+
+
+### Usage
+echopongo2 implements the echo [Renderer](http://godoc.org/github.com/labstack/echo#Renderer) interface
+
+```go
 e := echo.New()
-r, err := echo-pongo2.NewRenderer("./template")
-e.SetRenderer(r)
+r, err := echopongo2.NewRenderer("./template")
+e.Renderer = r
 ```
 
-somewhere in a handler
-```
+Somewhere in a handler
+
+```go
 func Hello(c *echo.Context) error {
     data := map[string]string{"World":"mayowa"}
     return c.Render(http.StatusOK, "hello.html", data)
 }
-```
-
-template: ./template/hello.html
-```
-Hello {{World}}
 ```
